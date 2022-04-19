@@ -91,7 +91,7 @@ if(estado === JOGANDO){
     if(areia.x < 0){
         areia.x = areia.width/2;
     }
-    if(keyDown("space")&& internet.y > height-120 || touches.lenght > 0 && internet.y > height-120){
+    if(keyDown("space")&& internet.y > height-120 || touches.length > 0 && internet.y > height-120){
         internet.velocityY = -12;
         pulacorda.play();
         touches = [];
@@ -119,7 +119,7 @@ if(estado === JOGANDO){
     internet.velocityY = 0;
     fim.visible = true;
     recomeco.visible = true;
-    if(mousePressedOver(recomeco) || touches.lenght > 0 ){
+    if(mousePressedOver(recomeco) || touches.length > 0 ){
         tenteNovamente();
         touches = [];
 }
